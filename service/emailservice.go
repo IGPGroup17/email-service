@@ -7,5 +7,5 @@ import (
 
 func StudentAuthRequest(event events.APIGatewayProxyRequest) (string, http.Status, error) {
 
-	return "", http.Status{}, nil
+	return "", http.OK, nil
 }
