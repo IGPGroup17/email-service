@@ -2,10 +2,10 @@ package service
 
 import (
 	"github.com/aws/aws-lambda-go/events"
-	"studentpals/email-service/util"
+	"studentpals/email-service/http"
 )
 
-func StudentAuthRequest(event events.APIGatewayProxyRequest) (string, util.HTTPStatus) {
+func StudentAuthRequest(event events.APIGatewayProxyRequest) (string, http.Status, error) {
 
-	return "", util.HTTPStatus{}
+	return "", http.Status{}, nil
 }
